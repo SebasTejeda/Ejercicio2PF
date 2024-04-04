@@ -45,4 +45,17 @@ public class Employee {
                 ", salary=" + salary +
                 '}';
     }
+
+    public boolean isTheIdCorrect(int id){
+        return id == this.id;
+    }
+
+    public void salaryIncrease(int increment){
+        this.salary *= (100 + increment);
+        this.salary /= 100;
+    }
+
+    public String listOfEmployees() {
+        return this.id + ", " + this.name + ", " + this.salary;
+    }
 }
